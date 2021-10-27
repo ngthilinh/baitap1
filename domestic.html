@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <title>SƠN TÙNG - M-TP</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            background:white; 
+        }
+        
+        body{
+            background: white;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        
+        #running{
+            width: 1000px;
+            height: 35px;
+            background:#2D0000;
+            float: left;
+            overflow: hidden;
+            text-align: center;
+            line-height:35px;
+        }
+        
+        #banner{
+            background: red;
+            height: 350px;
+            width: 1000px;
+        }
+        #banner img{
+            height:90%;
+            width:100%;
+        }
+        #menu{
+            width:1000px;
+            height: 80px;
+            background:#4B0000;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #menu > ul{
+            list-style-type: none;
+            height: 100%;
+        }
+    
+        #menu > ul > li{
+            list-style:none;
+            float: left;
+            height: 100%;
+            line-height: 52px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            padding: 0 20px;
+            font-size: 5 rem;
+            position: relative;
+            text-align:center;
+
+           
+        }
+        #menu ul > li > a {
+            text-decoration:none;
+            color: white;
+            padding: 0px 15px 0 px 15px;
+            line-height:80px;
+            display:block;
+            text-align:center;
+            position: relative;
+            
+        }
+        #menu ul > li > a:hover {
+            background: rgb(41, 4, 4);
+            color: wheat;
+            transition:ease-in 0.35s;
+            animation: slide 1s;
+        
+        }
+        #menu ul > li > ul {
+            list-style-type:none;
+            width: 400px;
+            background:#4B0000;
+            display: none; /*để memu k hiện*/
+
+        }
+        #menu ul > li:hover > ul {
+            display: block;
+        }
+        @keyframes slide{
+            0%{left: 10px;}
+            20%{left: -8px;}
+            40%{left: 6px;}
+            60%{left: -4px;}
+            80%{left: 2px;}
+            100%{left: 0;}
+        }
+        
+        
+       /* #menu ul > li > ul > li > a::before {
+            content: " >> ";
+        }*/
+
+
+       #ticket {
+            height: 700px;
+            margin-top: 10px; 
+            margin-bottom: 5px;
+            margin-left: 20px;
+            list-style-type: none;
+            float: left;
+            clear: both;
+            overflow-y: scroll;
+       }
+       #ticket li img{
+            height: 100%;
+            width: 200px;
+            float:left;
+            padding-left: 50px;
+            padding-top:18px;
+
+        }
+        #ticket li p{
+            float:left;
+            text-align:center;
+            padding-left: 100px;
+            padding-right: 160px;
+            margin-top: 50px;
+            color:#2D0000;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+       
+        #footer {
+            width:1000px;
+            height: 190px;
+            background: #4B0000;
+            color: white;
+            clear:both;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #footer #cottrai {
+            float:left;
+            color: white;
+            width:33.33%;
+            margin-top:65px;
+            margin-left: 30px;
+            
+        }
+
+        #footer #cotgiua {
+            float:left;
+            color: white;
+            width:30%;
+            margin-top:65px;
+        }
+
+        #footer #cotgiua ul li a {
+            float:left;
+            text-decoration:none;
+        }
+
+
+        #footer #cotphai {
+            float:left;
+            color: white;
+            width:33.33%;
+            margin-top:65px;
+        }
+        #footer #cotphai ul li a {
+            text-decoration:none;
+        }
+        #footer #cotphai a {
+            margin-left:20px;
+            font-size: 20px;
+            text-decoration: none;
+            color:white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <marquee direction="left" id="running">
+        <p style="color: white ; font-size: 16px; "> Sơn Tùng M-TP sẽ quay trở lại vào tháng 11 tới với sự remix một loạt các bản hit đã từng làm mưa làm gió trên thị trường nhạc Việt.
+            <a href="" style="color:rgb(236, 51, 18);">Đặt mua ablum ngay</a></p> 
+    </marquee>
+
+    <div id="banner">
+        <img src="./bia.jpg" alt="">
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#">PROFILE</a>
+                <ul>
+                    <li><a href="">BIOGRAPHY</a></li>
+                    <li><a href="./activity.html">ACTIVITY</a></li>
+                </ul>
+            </li>
+            <li><a href="#">PRODUCT</a>
+                <ul>
+                    <li><a href="">ABLUM<a></li>
+                    <li><a href="">MV</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONCERT</a>
+                <ul>
+                    <li><a href="./domestic.html">DOMESTIC</a></li>
+                    <li><a href="">FOREIGN</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONTACT</a>
+                <ul>
+                    <li><a href="">BUYS ALBUM</a></li>
+                    <li><a href="">M-TP ETERTAINMENT</a></li>
+                </ul>
+            </li>
+        </ul>    
+    </div>
+        
+
+    </div>
+    <div id="ticket">
+        <li>
+            <img src="./ticket1.jpg" alt="">
+            <p> <br>4 May 2021</br>
+                <br>Da Nang, Vietnam</br>
+            </p>
+            <img src="./ticket.png" alt="">
+        </li>
+        <li>
+            <img src="./ticket2.jpeg" alt="">
+            <p> <br>22 July 2021</br>
+                <br>An Giang, Vietnam</br>
+            </p>
+            <img src="./ticket.png" alt="">
+        </li>
+        <li>
+            <img src="./ticket3.jpg" alt="">
+            <p> <br>18 September 2021</br>
+                <br>Ha Noi, Vietnam</br>
+            </p>
+            <img src="./ticket.png" alt="">
+        </li>
+        <li>
+            <img src="./ticket4.jpg" alt="">
+            <p> <br>30 November 2021</br>
+                <br>Hai Phong, Vietnam</br>
+            </p>
+            <img src="./ticket.png" alt="">
+        </li>
+        <li>
+            <img src="./ticket5.jpg" alt="">
+            <p> <br>14 December 2021</br>
+                <br>Nha Trang, Vietnam</br>
+            </p>
+            <img src="./ticket.png" alt="">
+        </li>
+        <li>
+            <img src="./ticket6.jpg" alt="">
+            <p> <br>24 December 2021</br>
+                <br>Long An, Vietnam</br>
+            </p>
+            <img src="./ticket.png" alt="">
+        </li>
+
+        </div>
+    </div>
+
+    </div>
+    <div id="footer">
+        <div class="cot">
+            <div id="cottrai">
+                <p>
+                <br>SON TUNG M-TP SINGER</br>
+                @ Designed and Developed by Linh Nguyen 
+                </p>
+                </div>
+            <div id="cotgiua">
+            <ul>   
+                <li><a href="" style="color: white;">Privacy Policy</a></li>
+                <li><a href="" style="color: white;">Terms of Use</a></li>
+                <li><a href="" style="color: white;">License Agreement</a></li>
+                <li><a href="" style="color: white;">Interest-Based Ads</a></li>   
+            </ul>
+            </div>
+            <div id="cotphai">
+                COMMUNICATION COOPERATION
+                <ul>
+                        <a href=""><i class="ti-facebook"></i></a>
+                        <a href=""><i class="ti-instagram"></i></a>
+                        <a href=""><i class="ti-twitter"></i></a>
+                        <a href=""><i class="ti-pinterest"></i></a>
+                        <a href=""><i class="ti-youtube"></i></a>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

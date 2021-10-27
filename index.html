@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <title>SƠN TÙNG - M-TP</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            background:white; 
+        }
+        
+        body{
+            background: white;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        
+        #running{
+            width: 1000px;
+            height: 35px;
+            background:#2D0000;
+            float: left;
+            /*overflow: hidden;*/
+            text-align: center;
+            line-height:35px;
+        }
+        
+        #banner{
+            background: red;
+            height: 350px;
+            width: 1000px;
+        }
+        #banner img{
+            height:90%;
+            width:100%;
+        }
+        #menu{
+            width:1000px;
+            height: 80px;
+            background:#4B0000;
+        }
+        #menu > ul{
+            list-style-type: none;
+            height: 100%;
+        }
+    
+        #menu > ul > li{
+            list-style:none;
+            float: left;
+            height: 100%;
+            line-height: 52px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            padding: 0 20px;
+            font-size: 5 rem;
+            position: relative;
+            text-align:center;
+
+           
+        }
+        #menu ul > li > a {
+            text-decoration:none;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 0px 15px  0px 15px;
+            line-height:80px;
+            display:block;
+            text-align:center;
+            position: relative;
+            
+        }
+        #menu ul > li > a:hover {
+            background: rgb(41, 4, 4);
+            color: wheat;
+            /*transition:ease-in 0.35s;*/
+            animation: slide 1s;
+        
+        }
+        #menu ul > li > ul {
+            list-style-type:none;
+            width: 400px;
+            background:#4B0000;
+            display: none; /*để memu k hiện*/
+
+        }
+        #menu ul > li:hover > ul {
+            display: block;
+        }
+        @keyframes slide{
+            0%{left: 10px;}
+            20%{left: -8px;}
+            40%{left: 6px;}
+            60%{left: -4px;}
+            80%{left: 2px;}
+            100%{left: 0;}
+        }
+        
+        
+       /* #menu ul > li > ul > li > a::before {
+            content: " >> ";
+        }*/
+
+
+       
+
+       
+        #main #left {
+            width: 60%;
+            height: 500px;
+            float:left;
+            clear:both;
+        }
+        #main #left img{
+            width: 70%;
+            height:90%;
+            padding-left: 80px;
+            padding-top:18px;
+        }
+        #main #right {
+            width: 40%;
+            height: 500px;
+            float:left;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 40px;
+        }
+        #main #right #title {
+            color:#4B0000;
+        }
+
+
+        #link {
+            width:1000px;
+            background:white;
+            height:700px;
+            clear:both;
+            
+        }
+        #link h2{
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px 10px 10px 10px;
+            color:#4B0000;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #link #content-link{
+            display: block;
+            height: 20%;
+        }
+        #link #content-link ul{
+            width: inherit;
+            height: inherit;
+        }
+        #link #content-link ul li{
+            display: block;
+            float: left;
+            white-space: nowrap;
+            width: 20%;
+        }
+        #link #content-link ul li a {
+            width: 30%;
+        }
+        #link #content-link ul li a img {
+            height: 100px;
+            margin-right: 15px;
+            margin-left: 15px;
+            margin-top: 20px;
+            transform: scale(1); /*hover vào ảnh*/
+            transition: all 0.5s;
+        }
+        #link #content-link ul li a img:hover {
+            transform: scale(1.1); /*https://quachquynh.com/hieu-ung-hover-anh-trong-css3/ */
+        
+        }
+        #link #bottom-link h2{
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px 10px 10px 10px;
+            color:#4B0000;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #link #bottom-link ul{
+            height: 800px;
+            padding-top: 30px;
+            width: inherit;
+
+        }
+        #link #bottom-link ul li{
+            height: 100px;
+            margin-top: 4px; 
+            margin-bottom: 10px;
+            margin-left: 50px;
+            list-style-type: none;
+        }
+        #link #bottom-link ul li img{
+            height: 100%;
+            width: 150px;
+            float:left;
+
+        }
+        #link #bottom-link ul li a{
+            padding-left: 30px;
+            text-align:justify;
+        }
+        
+            
+    
+        #footer {
+            width:1000px;
+            height: 190px;
+            background: #4B0000;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #footer #cottrai {
+            float:left;
+            color: white;
+            width:33.33%;
+            margin-top:65px;
+            margin-left: 30px;
+            
+        }
+
+        #footer #cotgiua {
+            float:left;
+            color: white;
+            width:30%;
+            margin-top:65px;
+        }
+        #footer #cotgiua ul li a{
+            float:left;
+            text-decoration:none;  
+        }
+       
+        #footer #cotphai {
+            float:left;
+            color: white;
+            width:33.33%;
+            margin-top:65px;
+        }
+        #footer #cotphai ul li a {
+            text-decoration:none;
+        }
+        #footer #cotphai a {
+            margin-left:20px;
+            font-size: 20px;
+            text-decoration: none;
+            color:white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <marquee direction="left" id="running">
+        <p style="color: white ; font-size: 16px; "> Sơn Tùng M-TP sẽ quay trở lại vào tháng 11 tới với sự remix một loạt các bản hit đã từng làm mưa làm gió trên thị trường nhạc Việt.
+            <a href="" style="color:rgb(236, 51, 18);">Đặt mua ablum ngay</a></p> 
+    </marquee>
+
+    <div id="banner">
+        <img src="./bia.jpg" alt="">
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#">PROFILE</a>
+                <ul>
+                    <li><a href="">BIOGRAPHY</a></li>
+                    <li><a href="./activity.html">ACTIVITY</a></li>
+                </ul>
+            </li>
+            <li><a href="#">PRODUCT</a>
+                <ul>
+                    <li><a href="">ABLUM</a></li>
+                    <li><a href="">MV</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONCERT</a>
+                <ul>
+                    <li><a href="./domestic.html">DOMESTIC</a></li>
+                    <li><a href="">FOREIGN</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONTACT</a>
+                <ul>
+                    <li><a href="">BUYS ALBUM</a></li>
+                    <li><a href="">M-TP ETERTAINMENT</a></li>
+                </ul>
+            </li>
+        </ul>    
+    </div>
+        
+
+    </div>
+    <div id="main">
+        <div id="left">
+            <img src="./left1.jpg" alt="">
+        </div>
+        <div id="right">
+            <h1 id = "title">SON TUNG M-TP SINGER</h1>
+            <p> <br>In this Vietnamese name, the surname is Nguyễn. In accordance with Vietnamese custom, this person should be referred to by the given name, Tùng.</br>
+                <br>Born: 5 July 1994 (age 27)</br>
+                <br>Occupation: Singer, songwriter, actor, businessman</br>
+                <br>Years active: 2009 - present</br>
+                <br>Genres (music): Pop, R&B, EDM</br>
+                <br>Instruments: Vocals, piano, electronic, keyboard</br>
+                <br>Labels: WePro EntertainmentM-TP Entertainment</br>
+                <br>Vietnamese singer-songwriter Sơn Tùng M-TP began his career as an independent artist online before finding success with "Cơn mưa ngang qua", his debut single released in 2012. It was Tùng's 2013 single, "Em của ngày hôm qua", that helped him to reach mainstream status</br>
+            </br>
+
+            </p>
+        </div>
+    </div>
+
+
+    <div id="link">
+        <h2>Các tin liên quan</h2>
+        <div id="content-link">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="https://i1-sohoa.vnecdn.net/2021/07/14/bia-1626251729-9387-1626251823.png?w=500&h=300&q=100&dpr=2&fit=crop&s=ZoYroml3-L6Qr7TQQYamBg" alt="">
+                        <img src="https://i1-giaitri.vnecdn.net/2021/04/30/sntngmtp-1619746825-3594-1619746847.jpg?w=500&h=300&q=100&dpr=2&fit=crop&s=YGmkXLE7S9x4F97aNC63gw" alt="">
+                        <img src="https://i1-giaitri.vnecdn.net/2021/02/03/PosterOfficial1562037152-16123-1267-4089-1612328655.jpg?w=500&h=300&q=100&dpr=2&fit=crop&s=p76rSwKjlenjRKGwKw6NbQ" alt="">
+                        <img src="https://i1-giaitri.vnecdn.net/2021/01/27/mtptung2-1611762083-2801-1611762227.jpg?w=500&h=300&q=100&dpr=2&fit=crop&s=6xnMEsZXHKurpgmEg6R4BQ" alt="">
+                        <img src="https://i1-giaitri.vnecdn.net/2021/01/27/haitutop98651611719662-1611719-2766-4779-1611719921.jpg?w=500&h=300&q=100&dpr=2&fit=crop&s=QxgylnTG3YyvX4Iq99GlOQ" alt="">                                         
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="bottom-link">
+            <h2>Các bài hát nổi bật</h2>
+            <ul>
+                <li>
+                    <img src="https://kenh14cdn.com/203336854389633024/2021/4/15/photo-1-16184990801231102193290.jpg" alt="">
+                    <a href="https://www.google.com.vn/url?sa=i&url=https%3A%2F%2Fkenh14.vn%2Fmuon-roi-sao-ma-con-cua-son-tung-bi-dan-tinh-thi-nhau-che-tu-cho-luong-doi-no-den-suc-manh-bien-hinh-winx-cung-bat-trend-20210415223339837.chn&psig=AOvVaw10Yzg8TpuN3hnVhj1hZTr3&ust=1634702144000000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPCj_ZnK1fMCFQAAAAAdAAAAABAD" style="color:#4B0000;">Muộn rồi mà sao còn - Nhìn lên trần nhà rồi quay ra lại quay vào</a>
+                </li>
+                <li>
+                    <img src="https://media.vov.vn/sites/default/files/styles/large/public/2021-02/chungtacuahientai.jpg" alt="">
+                    <a href="https://www.youtube.com/watch?v=psZ1g9fMfeo" style="color:#4B0000;">Chúng ta của hiện tại - Mùa thu mang giấc mơ quay về, chốn xưa anh chờ</a>
+                </li>
+                <li>
+                    <img src="https://media.ex-cdn.com/EXP/media.tintucvietnam.vn/files/dovietanh116/2020/07/06/5cl7mrrbmeli0pvqrrt323lgorypssygvxcf90ik-0948.jpeg" alt="">
+                    <a href="https://www.youtube.com/watch?v=6t-MjBazs3o" style="color:#4B0000;">Có chắc yêu là đây - Anh ngẩn ngơ cứ ngỡ. Đó chỉ là giấc mơ</a>
+                </li>
+                 <li>
+                    <img src="https://dep.com.vn/wp-content/uploads/2019/07/deponline-sontung.jpg" alt="">
+                    <a href="https://www.youtube.com/watch?v=knW7-x7Y7RE" style="color:#4B0000;">Hãy trao cho anh - Hình bóng ai đó nhẹ nhàng vụt qua nơi đây. Quyến rũ ngây ngất loạn nhịp làm tim mê say</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="cot">
+            <div id="cottrai">
+                <p>
+                <br>SON TUNG M-TP SINGER</br>
+                @ Designed and Developed by Linh Nguyen 
+                </p>
+                </div>
+            <div id="cotgiua">
+            <ul>   
+                <li><a href="" style="color: white;">Privacy Policy</a></li>
+                <li><a href="" style="color: white;">Terms of Use</a></li>
+                <li><a href="" style="color: white;">License Agreement</a></li>
+                <li><a href="" style="color: white;">Interest-Based Ads</a></li>   
+            </ul>
+            </div>
+            <div id="cotphai">
+                COMMUNICATION COOPERATION
+            <ul>
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <title>SƠN TÙNG - M-TP</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            background:white; 
+        }
+        
+        body{
+            background: white;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        
+        #running{
+            width: 1000px;
+            height: 35px;
+            background:#2D0000;
+            float: left;
+            overflow: hidden;
+            text-align: center;
+            line-height:35px;
+        }
+        
+        #banner{
+            background: red;
+            height: 350px;
+            width: 1000px;
+        }
+        #banner img{
+            height:90%;
+            width:100%;
+        }
+        #menu{
+            width:1000px;
+            height: 80px;
+            background:#4B0000;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #menu > ul{
+            list-style-type: none;
+            height: 100%;
+        }
+    
+        #menu > ul > li{
+            list-style:none;
+            float: left;
+            height: 100%;
+            line-height: 52px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            padding: 0 20px;
+            font-size: 5 rem;
+            position: relative;
+            text-align:center;
+
+           
+        }
+        #menu ul > li > a {
+            text-decoration:none;
+            color: white;
+            padding: 0px 15px 0 px 15px;
+            line-height:80px;
+            display:block;
+            text-align:center;
+            position: relative;
+            
+        }
+        #menu ul > li > a:hover {
+            background: rgb(41, 4, 4);
+            color: wheat;
+            transition:ease-in 0.35s;
+            animation: slide 1s;
+        
+        }
+        #menu ul > li > ul {
+            list-style-type:none;
+            width: 400px;
+            background:#4B0000;
+            display: none; /*để memu k hiện*/
+
+        }
+        #menu ul > li:hover > ul {
+            display: block;
+        }
+        @keyframes slide{
+            0%{left: 10px;}
+            20%{left: -8px;}
+            40%{left: 6px;}
+            60%{left: -4px;}
+            80%{left: 2px;}
+            100%{left: 0;}
+        } 
+        
+       /* #menu ul > li > ul > li > a::before {
+            content: " >> ";
+        }*/
+
+        #main #left {
+            width: 60%;
+            height: 600px;
+            float:left;
+            clear:both;
+        }
+        #main #left img{
+            width: 75%;
+            height:90%;
+            padding-left: 80px;
+            padding-top: 30px;
+        }
+        #main #right {
+            width: 40%;
+            height: 600px;
+            float:left;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 40px;
+        }
+        #main #right #title {
+            color:#4B0000;
+        }
+
+
+        #content {
+            width:1000px;
+            background:white;
+            height:700px;
+            clear:both;
+            color:#4B0000;
+            padding-top: 40px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+         
+
+        }
+        
+        #content #top-content-left img {
+            float: left;
+            width: 44%;
+            height: 40%;
+            padding-left: 40px;
+            padding-top: 40px;
+
+        }
+    
+        #content #top-content-right {
+            width: 40%;
+            height: 600px;
+            float:left;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 80px;
+            color: black;
+            padding-left: 87px;
+        }        
+    
+        #footer {
+            width:1000px;
+            height: 190px;
+            background: #4B0000;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #footer #cottrai {
+            float:left;
+            color: white;
+            width:33.33%;
+            margin-top:65px;
+            margin-left: 30px;
+            
+        }
+
+        #footer #cotgiua {
+            float:left;
+            color: white;
+            width:30%;
+            margin-top:65px;
+        }
+
+        #footer #cotgiua ul li a {
+            float:left;
+            text-decoration:none;
+        }
+
+
+        #footer #cotphai {
+            float:left;
+            color: white;
+            width:33.33%;
+            margin-top:65px;
+        }
+        #footer #cotphai ul li a {
+            text-decoration:none;
+        }
+        #footer #cotphai a {
+            margin-left:20px;
+            font-size: 20px;
+            text-decoration: none;
+            color:white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <marquee direction="left" id="running">
+        <p style="color: white ; font-size: 16px; "> Sơn Tùng M-TP sẽ quay trở lại vào tháng 11 tới với sự remix một loạt các bản hit đã từng làm mưa làm gió trên thị trường nhạc Việt.
+            <a href="" style="color:rgb(236, 51, 18);">Đặt mua ablum ngay</a></p> 
+    </marquee>
+
+    <div id="banner">
+        <img src="./bia.jpg" alt="">
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#">PROFILE</a>
+                <ul>
+                    <li><a href="">BIOGRAPHY</a></li>
+                    <li><a href="./activity.html">ACTIVITY</a></li>
+                </ul>
+            </li>
+            <li><a href="#">PRODUCT</a>
+                <ul>
+                    <li><a href="">ABLUM</a></li>
+                    <li><a href="">MV</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONCERT</a>
+                <ul>
+                    <li><a href="./domestic.html">DOMESTIC</a></li>
+                    <li><a href="">FOREIGN</a></li>
+                </ul>
+            </li>
+            <li><a href="">CONTACT</a>
+                <ul>
+                    <li><a href="">BUYS ALBUM</a></li>
+                    <li><a href="">M-TP ETERTAINMENT</a></li>
+                </ul>
+            </li>
+        </ul>    
+    </div>
+        
+
+    </div>
+    <div id="main">
+        <div id="left">
+            <img src="./page2.jpg" alt="">
+        </div>
+        <div id="right">
+            <h1 id = "title">LIFE AND CAREER</h1>
+            <p> <br>1994–2012: Early life and career</br>
+                <br>He was two years old when the family discovered his singing ability</br>
+                <br>At the age of eight, he joined Thái Bình's Children's Arts and Culture Palace and learned to play the electronic keyboard</br>
+                <br>Tùng originally wrote "Cơn mưa ngang qua" for Over Band and Young Pilots before deciding to record the song himself</br>
+                <br>He published it on the music website Zing MP3 in August 2011, and within two months of release, it had 1.7 million streams</br>
+                <br>2013–2015: Breakthrough, copyright controversies and Dandelion</br>
+                <br>Tùng released three singles between August and December 2013: "Nang am xa dan","Dung ve tre" and "Em cua ngay hom qua"</br>
+                <br>The latter launched Tùng's mainstream career and successfully gained over 100 million streams in three months on Zing MP3</br>
+                <br>2015–2017: The Remix and concerts</br>
+                <br>In January 2015, Tùng joined a team with disc jockey Trang Moon and music producer SlimV on the first season of the television competition series The Remix</br>
+                <br>2017–present: m-tp M-TP, Sky Tour Movie and Chúng ta</br>
+            </br>
+
+            </p>
+        </div>
+    </div>
+
+
+    <div id="content">
+        <h2>Artistry</h2>
+        <div id="top-content">
+        <div id="top-content-left">
+            <img src="./page2.2.jpg" alt="">
+        </div>
+        <div id="top-content-right">
+            <p>
+                <br>Tùng recalled in his autobiography Cham toi giac mo that he frequently listened to his grandparents singing Quan họ (a Vietnamese folk music style originating in Bac Ninh) as a child </br> 
+                <br>Its signature vocal style eventually affected his way of singing slur notes, and Vietnamese folk music in general has inspired his work</br>
+                <br>The singer later grew up listening to artists such as Quang Vinh, whom he idolized, Chris Brown, Rihanna and Justin Bieber</br>
+                <br>Tùng has also been influenced by the Vietnamese underground hip hop scene and K-pop acts, including Big Bang, Super Junior and TVXQ</br>
+                <br>His early releases contain pop, contemporary R&B and hip-hop elements. Tùng followed electronic dance music later in his career, with the tropical house-oriented "Chúng ta không thuộc về nhau" (2016)</br>
+                <br>Some of his productions also incorporated Vietnamese traditional musical instruments—most notably "Lạc trôi" (2017), which is a future bass track featuring the đàn tranh and sáo</br>
+                <br>Tùng said that most of his romantic lyrics were inspired by Korean dramas and his former high-school crush; the latter was most evident in the lyrics of "Em của ngày hôm qua" (2013)</br>
+                <br>e performed them with his signature rap vocals, which over the years were often described as being unclear and divided public reception</br>
+            </p>
+        </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        <div class="cot">
+            <div id="cottrai">
+                <p>
+                <br>SON TUNG M-TP SINGER</br>
+                @ Designed and Developed by Linh Nguyen 
+                </p>
+                </div>
+            <div id="cotgiua">
+            <ul>   
+                <li><a href="" style="color: white;">Privacy Policy</a></li>
+                <li><a href="" style="color: white;">Terms of Use</a></li>
+                <li><a href="" style="color: white;">License Agreement</a></li>
+                <li><a href="" style="color: white;">Interest-Based Ads</a></li>   
+            </ul>
+            </div>
+            <div id="cotphai">
+                COMMUNICATION COOPERATION
+            <ul>
+                    <a href=""><i class="ti-facebook"></i></a>
+                    <a href=""><i class="ti-instagram"></i></a>
+                    <a href=""><i class="ti-twitter"></i></a>
+                    <a href=""><i class="ti-pinterest"></i></a>
+                    <a href=""><i class="ti-youtube"></i></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
